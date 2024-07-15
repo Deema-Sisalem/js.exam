@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/side.css">
+  <title>Meal Categories</title>
+</head>
+<body class="bg-dark">
+  <div class="container-fluid">
+    <button id="toggle-btn" class="btn btn-primary toggle-btn">
+        <i class="fas fa-list"></i>
+    </button>
+    <nav id="side-nav" class="side-nav">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="search.html" id="search">Search</a></li>
+        <li class="list-group-item"><a href="category.html" id="category">Category</a></li>
+        <li class="list-group-item"><a href="area.html" id="area">Area</a></li>
+        <li class="list-group-item"><a href="ingredients.html" id="ingredients">Ingredients</a></li>
+        <li class="list-group-item"><a href="contact.html" id="contact">Contact</a></li>
+    </ul>
+    <div class="footer">
+        Copyright © 2019 All Rights Reserved.
+    </div>
+    </nav>
+    </div>
+    <div class="container mt-5">
+        <div id="categories" class="row mt-4"></div>
+        <div id="meals" class="row mt-4"></div>
+    </div>
+
+    <script src="js/category.js"></script>
+    <script src="js/side.js"></script>
+</body>
+</html>

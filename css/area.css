@@ -1,0 +1,43 @@
+#meals {
+    display: none;
+}
+
+
+.result-item {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.result-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.meal-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.result-item:hover .meal-name {
+    transform: translateY(0);
+}
+
+
+.card-body:hover , .card-title:hover{
+cursor: pointer;
+}

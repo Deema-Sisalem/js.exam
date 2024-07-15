@@ -1,0 +1,53 @@
+body {
+    transition: margin-left 0.3s;
+    background-color: #000; 
+}
+
+.side-nav {
+    position: fixed;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background: #333;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s;
+    z-index: 1000;
+    color: white;
+}
+
+.side-nav.active {
+    left: 0; 
+}
+
+
+.list-group-item a {
+    color: white; 
+    text-decoration: none;
+    
+}
+
+ a:hover {
+    text-decoration: underline;
+}
+
+.list-group-item{background-color: transparent !important;}
+
+.toggle-btn {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+    transition: transform 0.3s;
+}
+
+.toggle-btn.active {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.footer {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    color: white;
+}
